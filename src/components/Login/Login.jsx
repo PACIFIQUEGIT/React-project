@@ -8,7 +8,7 @@ export const Login = () => {
 <div class="signheader">
     <a href="#"><img src="images/linkedinlogo.webp" alt=""/></a>
 </div>
-<div class="container">
+<div class="containerl">
     <form id="form" action="/">
         <h2>Login in</h2>
     <div class="form-group">
@@ -25,7 +25,7 @@ export const Login = () => {
         </div>
     </div>
     <a href="#">Forgot password?</a>
-    <button type="submit">Sign in</button>
+    <button type="submit">Login in</button>
     
     <div class="footer">
         <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
