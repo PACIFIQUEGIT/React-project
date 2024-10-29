@@ -1,0 +1,501 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.cont1{
+    background-size: cover;
+    background-image: url(https://html.geekcodelab.com/holiday-planners/assets/images/banner-slide-3.jpg);
+    width: 100%;
+    background-position: center;
+    color: white;
+    padding: 250px ;
+    text-align: center;
+}
+.cont1 h1{
+    font-size: 65px;
+}
+.cont1 span{
+    background-color: chocolate;
+}
+.cont1 p{
+    font-size: 21px;
+    margin-top: 10px;
+}
+.cont1 .content{
+    bottom: -120px;
+    height: 100px;
+    background-color: white;
+    border-left: 3px solid chocolate;
+    border-right: 3px solid chocolate;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+}
+.cont1 .content form{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 31px;
+}
+.cont1 .content div{
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 5px;
+    width: 220px;
+}
+.cont1 .content div .form-input{
+    border: 0;
+    width: 180px;
+}
+.cont1 .content div span{
+    background-color: transparent;
+    color: chocolate; 
+    font-size: inherit; 
+    font-weight: inherit; 
+}
+.cont1 .content div .form-input:focus{
+    border: 0px !important; 
+    outline: none;
+}
+.cont1 .content form button{
+    width: 180px;
+    background-color: chocolate;
+    color: white;
+    font-size: bold;
+    border: 0;
+    transition: 1s ease;
+}
+.cont1 .content form button:hover{
+    background-color: black;
+}
+.cont2{
+    height: 100vh;
+}
+.cont2 .content{
+    padding: 130px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.cont2 .content > div:first-child {
+    margin-right: 100px; 
+}
+.imagescont2{
+    position: relative;
+}
+.cont2img1 {
+    height: 400px;
+    width: 440px;
+    border: 3px solid chocolate;
+    padding: 3px;
+}
+.image-wrapper1{
+    background-image: url('https://html.geekcodelab.com/holiday-planners/assets/images/about-big-image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%; 
+    width: 100%; 
+}
+.cont2img2{
+    position: absolute;
+    height: 160px;
+    width: 220px;
+    bottom: -40px;
+    right: -70px;
+    border: 3px solid chocolate; 
+    padding: 3px;
+}
+.image-wrapper2{
+    background-image: url('https://html.geekcodelab.com/holiday-planners/assets/images/about-small-image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%; 
+    width: 100%; 
+}
+.aboutus{
+    padding: 20px 0;
+}
+.aboutus .h4div{
+    border-left: 3px solid chocolate;
+    padding: 2px 7px;
+}
+.aboutus .h4div .h4{
+    color: chocolate;
+    font-size: 23px;
+}
+.aboutus .h2{
+    margin: 20px 0;
+    font-weight: 400;
+    font-size: 35px;
+}
+.aboutus .h2 span{
+    font-weight: 700;
+}
+.aboutus .p p{
+    font-size: 17px;
+}
+.aboutus-btn{
+    text-decoration: none;
+    width: 180px;
+    background-color: chocolate;
+    color: white;
+    font-size: bold;
+    border: 0;
+    border-radius: 7px;
+    padding: 15px 25px;
+    transition: 1s ease;
+}
+.aboutus-btn:hover{
+    background-color: black;
+}
+.aboutus .btn{
+    margin: 35px 0;
+}
+.cont3{
+    background-color: rgb(243, 242, 242);
+    height: 70vh;
+}
+body {
+    overflow-x: hidden; 
+    margin: 0; 
+}
+.cont3 .content{
+    margin-top: 70px;
+}
+.amazingoffers .h4{
+    border-left: 3px solid chocolate;
+    padding: 2px 7px;
+    color: chocolate;
+    font-size: 23px;
+}
+.carousel-div{
+    position: relative;
+}
+.carousel-div h1{
+    margin-top: 20px;
+    font-size: 35px;
+    font-weight: 400;
+}
+.carousel-div h1 span{
+    font-weight: 700;
+}
+.carousel-div .buttons{
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+}
+.carousel-div .buttons button{
+    background-color: chocolate;
+    color: white;
+    padding: 10px 18px;
+    margin-bottom: 10px;
+    border: transparent;
+}
+.carousel-div .container{
+    margin: 30px 0;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    transition: transform 0.5s ease;
+}
+.carousel-div .container .slides{
+    flex: 0 0 calc(100% / 5);
+}
+.carousel-div .slides .img{
+    background-size: cover;
+    background-position: center;
+    height: 370px; 
+    width: 340px; 
+    position: relative;
+    margin-bottom: 45px;
+    margin-right: 56px;
+}
+.dots {
+    text-align: center;
+    margin-top: 10px;
+}  
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background: gray;
+    cursor: pointer;
+} 
+.dot.active {
+    background: blue; 
+}  
+.carousel-div div .discount{
+    background-color: chocolate;
+    color: white;
+    position: absolute;
+    padding: 8px 12px;
+    transform: rotate(-90deg); 
+    top: 21px;
+}
+.carousel-div div .placeprice{
+    position: absolute;
+    display: flex;
+    bottom: -27px;
+    right: -27px;
+}
+.carousel-div div .placeprice .place{
+    background-color: white;
+    padding: 17px;
+    border-left: 3px solid chocolate;
+}
+.carousel-div div .placeprice .price{
+    background-color: chocolate;
+    color: white;
+    padding: 17px 10px;
+}
+.cont4{
+    margin-top: 40vh;
+    position: relative;
+}
+.video-container{
+    width: 100%; 
+}
+video{
+    width: 100%;      
+    height: auto;     
+}
+.cont4 .sec-wrap1{
+    position: absolute;
+    border: 5px solid chocolate;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 1250px;
+    height: 670px;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+}
+.sec-wrap1 h1{
+    color: white;
+    font-size: 45px;
+}
+.sec-wrap1 h2{
+    color: chocolate;
+    font-size: 35px;
+    margin: 20px 0;
+}
+.cont4 .content{
+    background-color: chocolate;
+    bottom: -100px;
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+}
+.tour-service-box{
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    margin: auto 23px;
+}
+.tour-service-box div{
+    margin-top: 18px;
+    padding: 5px;
+}
+.tour-service-content h4{
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.cont5{
+    margin-top: 25vh;
+    background-color: rgb(243, 242, 242);
+    height: 65vh;
+}
+.cont5 .content{
+    margin-top: 70px;
+}
+.cont5 .h4{
+    border-left: 3px solid chocolate;
+    padding: 2px 7px;
+    color: chocolate;
+    font-size: 23px;
+}
+.cont5 .carousel-div .container{
+    position: relative;
+}
+.cont5 .carousel-div .slides .img{
+    width: 160px;
+    height: 170px;
+}
+
+
+
+/* Media query for max-width: 600px */
+@media (max-width: 600px) {
+    .cont1 {
+        padding: 120px 5px; /* Reduced padding */
+        padding-top: 280px;
+        height: 90vh; /* Adjust height */
+        text-align: center;
+    }
+    .cont1 .opac{
+        height: 90vh;
+    }
+
+    .cont1 h1 {
+        font-size: 40px; /* Reduced font size */
+    }
+
+    .cont1 p {
+        font-size: 18px; /* Reduced font size */
+    }
+
+    .cont1 .content {
+        bottom: -100px;
+         /* Adjusted padding */
+        height: auto;
+        padding: 20px;
+    }
+
+    .cont1 .content form {
+        padding: 0;
+        flex-direction: column; /* Stack form elements */
+        align-items: center; /* Center items */
+    }
+
+    .cont1 .content div {
+        width: 100%; /* Full width */
+        margin-bottom: 10px; /* Spacing between fields */
+    }
+    .cont1 .content button{
+        width: 100% !important;
+        padding: 15px;
+    }
+
+    .cont2 {
+        height: 123vh; /* Adjust height */
+        padding: 200px; /* Added padding */
+    }
+
+    .cont2 .content {
+        flex-direction: column; /* Stack content */
+        align-items: center; /* Center items */
+        padding: 20px 0; /* Adjusted padding */
+    }
+
+    .cont2 .content > div:first-child {
+        padding: 0;
+        margin-left: 28px;/* Remove margin */
+    }
+
+    .cont2img1 {
+        width: 40vh; /* Full width */
+        height: 40vh; 
+    }
+    .cont2img2{
+        width: 20vh;
+        height: 20vh;
+    }
+
+    .cont3{
+        background-color: rgb(243, 242, 242);
+        height: 90vh;
+    }
+
+    body {
+        overflow-x: hidden; 
+        margin: 0; 
+    }
+    .cont3 .content{
+        margin-top: 43px;
+    }
+    .amazingoffers .h4{
+        border-left: 3px solid chocolate;
+        padding: 2px 7px;
+        color: chocolate;
+        font-size: 23px;
+    }
+
+    .aboutus .h2 {
+        font-size: 28px; /* Reduced font size */
+    }
+
+    .aboutus .p p {
+        line-height: 20px;
+        font-size: 15px; /* Reduced font size */
+    }
+
+    .aboutus-btn {
+        width: 100%; /* Full width */
+        padding: 10px 0; /* Adjusted padding */
+    }
+
+    .dots{
+        margin-top:45px;
+    }
+
+    .carousel-div .buttons{
+        top: 39px;
+    }
+
+    .carousel-div h1 {
+        font-size: 28px; /* Reduced font size */
+    }
+
+    .carousel-div .container {
+        margin-top: 70px;
+        display: flex; /* Stack slides */
+    }
+
+    .cont4{
+        margin-top: 0;
+        height: 44vh;
+    }
+
+    .cont4 .sec-wrap1 {
+        width: 95%; /* Adjusted width */
+        height: auto; /* Adjust height */
+        padding: 20px; /* Added padding */
+        top: 100px;
+    }
+
+    .sec-wrap1 h1 {
+        font-size: 30px; /* Reduced font size */
+    }
+
+    .sec-wrap1 h2 {
+        font-size: 25px; /* Reduced font size */
+    }
+
+    .cont4 .content {
+        bottom: -140px;
+        right: 10px;
+        height: auto;
+        flex-direction: column; /* Stack items */
+    }
+
+    .tour-service-box {
+        align-items: center; /* Center items */
+    }
+
+    .tour-service-content h4 {
+        font-size: 18px; /* Reduced font size */
+    }
+    .cont5{
+        height: 57vh;
+    }
+    .cont5 .content{
+        margin-top: 43px;
+    }
+
+    .cont5 .carousel-div .container {
+        text-align: center;
+        margin-top: 30px;
+        padding: 0 !important;
+        width: 100% ; 
+    }
+    .cont5 .carousel-div .container .slides .img{
+        width: 50vh;
+        height: 30vh;
+    }
+
+}

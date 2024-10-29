@@ -1,0 +1,207 @@
+.cont6{
+    background-image: url('https://html.geekcodelab.com/holiday-planners/assets/images/footer-back.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    opacity: .9;
+    padding-top: 90px;
+}
+.cont6::before {
+    content: '';
+    position: absolute; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.9); 
+    pointer-events: none; 
+    z-index: 1;
+}
+.cont6 .content{
+    color: white;
+    z-index: 100;
+    position: absolute;
+}
+.cont6 .icon{
+   margin-bottom: 20px;
+}
+.cont6 .icon p{
+    margin-top: 20px;
+    line-height: 20px;
+    font-size: 17px;
+}
+.cont6 .div1s form{
+    margin: 30px 0;
+}
+.cont6 .c6in{
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 5px 0 0 5px;
+    border-right: 0;
+    height: 45px;
+    width: 240px;
+}
+.cont6 button{
+    background-color: chocolate;
+    border: 1px solid chocolate;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    height: 45px;
+    width: 100px;
+}
+.cont6 button:hover{
+    background-color: white;
+    border: 1px solid white;
+    color: chocolate;
+    cursor: pointer;
+}
+.cont6 .icon1{
+    background-image: url('https://html.geekcodelab.com/holiday-planners/assets/images/payment-companies-logo.png');
+    background-position: center;
+    background-size: cover;
+    height: 30px;
+    width: 240px;
+    margin-top: 20px;
+}
+.cont6 .div1{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+}
+.cont6 .div1 .div1s{
+    flex: 1;
+    padding-right: 100px;
+    padding-bottom: 45px;
+}
+.cont6 .div1s h1{
+    margin: 20px 0;
+}
+.cont6 .div1s ul{
+    margin: 16px;
+}
+.cont6 .div1s ul li{
+    list-style: square;
+    margin-bottom: 20px;
+}
+.cont6 .div1s ul li a{
+    text-decoration: none;
+    color: white;
+}
+.cont6 .div1s ul li a:hover{
+    color: chocolate;
+}
+.cont6 .div1s .contacts{
+    border-left: 3px solid chocolate;
+    padding: 5px 0;
+    margin: 16px 0;
+}
+.cont6 .div1s .contacts p{
+    font-size: 12px;
+    margin: 5px 18px;
+}
+.cont6 .div1s .contacts p a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+.cont6 .div1s .contacts p a:hover{
+    color: chocolate;
+}
+.cont6 .div1s .contacts p .cons{
+    color: chocolate
+}
+.cont6 .div1s .contacts p .cons:hover{
+    color: white;
+}
+.cont6 .div2{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0;
+    font-size: 18px;
+}
+.cont6 .div2s a{
+    color: white;
+    text-decoration: none;
+}
+.cont6 .div2s a:hover{
+    color: chocolate;
+}
+.cont6 .div2s .geek{
+    text-decoration: none;
+    color: chocolate;
+}
+.cont6 .div2s .geek:hover{
+    color: white;
+    text-decoration: underline;
+}
+.cont6 .div2s span{
+    margin-right: 3px;
+    border-right: 1px solid white;
+    padding-right: 8px;
+}
+.back-to-top {
+    background-color: chocolate;
+    color: white;
+    position:fixed;
+    bottom: 30px;
+    right: 10px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    z-Index: 1000;
+    font-size: 25px;
+}
+  
+.back-to-top:hover {
+    background-color: black;
+    color: chocolate;
+}
+  
+
+
+/* Media query for max-width: 600px */
+@media (max-width: 600px) {
+    .cont6 {
+        padding-top: 60px; /* Reduced padding */
+        height: auto; /* Adjust height for smaller screens */
+    }
+
+    .cont6 .content {
+        position: relative; /* Change position for stacking */
+        padding: 20px; /* Added padding for better spacing */
+    }
+
+    .cont6 .div1 {
+        flex-direction: column; /* Stack elements vertically */
+        padding-bottom: 20px; /* Adjusted spacing */
+    }
+
+    .cont6 .div1 .div1s {
+        padding-right: 0; /* Remove right padding */
+        padding-bottom: 20px; /* Adjust spacing */
+    }
+
+    .cont6 .div1s ul {
+        margin: 10px 0; /* Adjusted margin */
+        margin-left: 16px;
+    }
+
+    .cont6 .div1s ul li {
+        margin-bottom: 10px; /* Reduced margin */
+    }
+
+    .cont6 .div2 {
+        flex-direction: column; /* Stack items */
+        font-size: 16px; /* Reduced font size */
+    }
+
+    .cont6 .div2s a {
+        margin: 5px 0; /* Adjusted margin for stacking */
+    }
+
+    .back-to-top {
+        font-size: 20px; /* Adjusted font size */
+        bottom: 20px; /* Adjusted position */
+    }
+}

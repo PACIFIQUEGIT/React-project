@@ -1,0 +1,273 @@
+.cont1d{
+    background-image: url('https://html.geekcodelab.com/holiday-planners/assets/images/destination-banner.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 120vh;
+    text-align: center;width: 100%;
+    background-position: center;
+    color: white;
+    padding: 250px ;
+    text-align: center;
+}
+.cont1d .opac{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 120vh;
+    opacity: .4;
+    background-color: black;
+}
+.cont1d .h1{
+    font-size: 80px;
+    margin-top: 160px;
+    text-align: center;
+    position: relative;
+}
+.cont2d{
+    background-image: url('https://html.geekcodelab.com/holiday-planners/assets/images/wave-design.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 305.55vh;
+}
+.contentd{
+    position: absolute;
+    left: 120px;
+    right: 120px;
+}
+.cont2d .contentd{
+    padding: 65px 0;
+}
+.c2d1lup{
+    background-image: url('https://html.geekcodelab.com/holiday-planners/assets/images/destination-img1.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.c2d1ldownl{
+    background-image: url('https://html.geekcodelab.com/holiday-planners/assets/images/destination-img2.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.c2d1ldownr{
+    background-image: url('https://html.geekcodelab.com/holiday-planners/assets/images/destination-img3.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.c2d1r{
+    background-image: url('https://html.geekcodelab.com/holiday-planners/assets/images/destination-img4.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.divc2d1{
+    display: flex;
+    justify-content: space-between;
+}
+.divc2d1 > div:last-child{
+    width: 32.5%;
+    height: 128vh;
+}
+.divc2d1 > div:first-child{
+    width: 65%;
+}
+.c2d1l > div{
+    height: 45.8%;
+}
+.c2d1l > div:first-child{
+    margin-bottom: 70px;
+}
+.c2d1ldown{
+    display: flex;
+}
+.c2d1ldown > div{
+    width: 50%;
+}
+.c2d1ldown > div:first-child{
+    margin-right: 30px;
+}
+.c2d1lup, .c2d1ldownl, .c2d1ldownr, .c2d1r{
+    position: relative;
+}
+.divc2d1 .country, .divc2d2 .country{
+    position: absolute;
+    background-color: white;
+    padding: 10px 28px;
+    border-left: 3px solid chocolate;
+    font-size: 25px;
+    bottom: -25px;
+    left: 30px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.c2d1lup:hover, .c2d1ldownl:hover, .c2d1ldownr:hover, .c2d1r:hover{
+    .country{
+        background-color: chocolate;
+        color: white;
+    }
+}
+.c2d2rup{
+    background-image: url('https://html.geekcodelab.com/holiday-planners/assets/images/destination-img6.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.c2d2rdownl{
+    background-image: url('https://html.geekcodelab.com/holiday-planners/assets/images/destination-img7.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.c2d2rdownr{
+    background-image: url('https://html.geekcodelab.com/holiday-planners/assets/images/destination-img8.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.c2d2l{
+    background-image: url('https://html.geekcodelab.com/holiday-planners/assets/images/destination-img5.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.divc2d2{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 65px;
+}
+.divc2d2 > div:first-child{
+    width: 32.5%;
+    height: 128vh;
+}
+.divc2d2 > div:last-child{
+    width: 65%;
+}
+.c2d2r > div{
+    height: 45.8%;
+}
+.c2d2r > div:first-child{
+    margin-bottom: 70px;
+}
+.c2d2rdown{
+    display: flex;
+}
+.c2d2rdown > div{
+    width: 50%;
+}
+.c2d2rdown > div:first-child{
+    margin-right: 30px;
+}
+.c2d2rup, .c2d2rdownl, .c2d2rdownr, .c2d2l{
+    position: relative;
+}
+.c2d2rup:hover, .c2d2rdownl:hover, .c2d2rdownr:hover, .c2d2l:hover{
+    .country{
+        background-color: chocolate;
+        color: white;
+    }
+}
+.cont2d .loadmore{
+    padding: 70px 0;
+    text-align: center;
+}
+.cont2d .loadmore button{
+    background-color: chocolate;
+    color: white;
+    padding: 17px 43px;
+    border-radius: 5px;
+    border: chocolate;
+}
+.cont2d .loadmore button:hover{
+    background-color: black;
+}
+
+
+/* Media query for max-width: 600px */
+@media (max-width: 600px) {
+    .cont1d {
+        padding: 120px 5px; /* Reduced padding */
+        padding-top: 280px;
+        height: 90vh; /* Adjust height */
+        text-align: center;
+    }
+    .cont1d .opac{
+        height: 90vh;
+    }
+
+    .cont1d .h1 {
+        font-size: 40px; /* Reduced font size */
+        margin-top: 80px; /* Adjusted margin */
+    }
+    .cont2d {
+        padding-top: 40px;
+        height: 305.7vh; /* Adjust height */
+    }
+
+    .contentd {
+        position: relative; /* Change position for stacking */
+        left: 0;
+        right: 0;
+        padding: 10px !important; /* Added padding */
+    }
+
+    .divc2d1{
+        display: block;
+    }
+    .divc2d1 > div:last-child{
+        width: auto;
+        height: 30vh;
+    }
+    .divc2d1 > div:first-child{
+        width: auto;
+        margin-bottom: 40px;
+    }
+    .c2d1l > div{
+        height: auto;
+    }
+    .c2d1l > div:first-child{
+        height: 30vh;
+        margin-bottom: 40px;
+    }
+    .c2d1ldown{
+        display: block;
+    }
+    .c2d1ldown > div{
+        width: 100%;
+        height: 30vh;
+    }
+    .c2d1ldown > div:first-child{
+        margin-bottom: 40px;
+    }
+    
+    .divc2d2{
+        display: block;
+        margin-top: 40px;
+    }
+    .divc2d2 > div:first-child{
+        width: 100%;
+        height: 30vh;
+        margin-bottom: 40px;
+    }
+    .divc2d2 > div:last-child{
+        width: 100%;
+    }
+    .c2d2r > div{
+        height: 30vh;
+    }
+    .c2d2r > div:first-child{
+        margin-bottom: 40px !important;
+    }
+    .c2d2rdown{
+        display: block;
+    }
+    .c2d2rdown > div{
+        width: 100%;
+        height: 30vh;
+    }
+    .c2d2rdown > div:first-child{
+        margin-bottom: 40px !important;
+    }
+
+    .loadmore{
+        height: 200vh !important;
+    }
+
+    .contentd .loadmore{
+        position: relative;
+        bottom: -260px;
+    }
+}

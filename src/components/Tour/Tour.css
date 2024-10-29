@@ -1,0 +1,397 @@
+.cont1t{
+    background-image: url('https://html.geekcodelab.com/holiday-planners/assets/images/tour-banner.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 120vh;
+    text-align: center;width: 100%;
+    background-position: center;
+    color: white;
+    padding: 250px ;
+    text-align: center;
+}
+.cont1t .opac{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 120vh;
+    opacity: .4;
+    background-color: black;
+}
+.cont1t .h1{
+    font-size: 80px;
+    margin-top: 160px;
+    text-align: center;
+    position: relative;
+}
+.contentto{
+    position: absolute;
+    left: 120px;
+    right: 120px;
+    display: flex;
+}
+.contentto > div:last-child{
+    width: 47%;
+}
+.cont2t{
+    margin-top: 30px;
+    height: 320vh;
+    position: relative;
+}
+.c2tl, .c2tl1{
+    width: 100%;
+}
+.c2tl{
+    margin-right: 28px;
+}
+.c2tl > div:first-child{
+    margin-bottom: 22px;
+}
+.c2tl > div{
+    margin-bottom: 20px;
+}
+.c2tl1 form{
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    label{
+    text-align: center;
+    };
+    select{
+        border: 0;
+        border-left: 1px solid black;
+    };
+}
+.c2tl1 form label, .c2tl1 form select{
+    flex: 1;
+    padding: 15px;
+    font-size: 16px;
+}
+.c2tl2, .c2tl3, .c2tl4{
+    display: flex;
+    justify-content: space-between;
+}
+.c2tl2 > div, .c2tl3 > div, .c2tl4 > div{
+    width: 48%;
+}
+.c2tl2li, .c2tl2li2, .c2tl2li3{
+    background-position: center;
+    background-size: cover;
+    height: 38vh;
+    position: relative;
+}
+.c2tl2li{
+    background-image: url('https://html.geekcodelab.com/holiday-planners/assets/images/tour-box-image1.jpg');
+}
+.c2tl2li2{
+    background-image: url('https://html.geekcodelab.com/holiday-planners/assets/images/tour-box-image2.jpg');
+}
+.c2tl2li3{
+    background-image: url('https://html.geekcodelab.com/holiday-planners/assets/images/tour-box-image4.jpg');
+}
+.c2tic{
+    position: absolute;
+    background-color: chocolate;
+    padding: 10px 15px;
+    color: white;
+    bottom: -18px;
+    left: 22px;
+}
+.c2tid{
+    position: absolute;
+    background-color: chocolate;
+    padding: 8px 12px;
+    color: white;
+    top: 21px;
+    transform: rotate(-90deg);
+}
+.c2tl2lc{
+    padding: 10px 20px;
+    border-left: 2px solid chocolate;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+}
+.c2tl2lc > div{
+    margin: 20px 0;
+}
+.divh5{
+font-size: 23px;
+}
+.divp{
+    font-size: 18px;
+}
+.divic{
+    display: flex;
+    justify-content: space-between;
+}
+.divicl, .divicr{
+    display: flex;
+}
+.divicl > div, .divicr > div{
+    margin-right: 10px;
+}
+.diviclli, .divicrli{
+    color: chocolate;
+    font-size: 28px;
+}
+.divic h6{
+    font-size: 15px;
+}
+.divic p{
+    font-size: 13px;
+}
+.divpr{
+    display: flex;
+    justify-content: space-between;
+}
+.price{
+    font-size: 20px;
+    padding-top: 26px;
+}
+.button button{
+    background-color: chocolate;
+    padding: 18px 20px;
+    border-radius: 5px;
+    border: chocolate;
+    color: white;
+}
+.button button:hover{
+    background-color: black;
+}
+.c2tl5 button{
+    background-color: rgb(240, 240, 240);
+    border: rgb(240, 240, 240);
+    border-radius: 5px;
+    color: black;
+    padding: 15px 18px;
+    margin-right: 10px;
+    font-weight: 500;
+}
+.c2tl5 .active{
+    background-color: chocolate;
+    color: white;
+}
+.c2tl5 button:hover{
+    background-color: chocolate;
+    color: white;
+}
+.c2tr{
+    margin-top: -84px;
+    background-color: white;
+}
+.c2tr > div{
+    padding: 35px;
+}
+.c2tr1{
+    box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.3);
+}
+.c2tr1 form > div{
+    border: 1px solid black;
+    margin-bottom: 20px;
+    padding: 12px;
+    border-radius: 5px;
+    display: flex;
+}
+.c2tr1 form > div:first-child{
+    border: 0;
+    border-left: 3px solid chocolate;
+    border-radius: 0;
+    padding: 5px 12px;
+}
+.c2tr1 form span{
+    color: chocolate;
+    margin-right: 10px;
+    font-size: 20px;
+}
+.c2tr1 form input, .c2tr1 form select{
+    width: 100%;
+    border: 0;
+}
+.c2tr1 form input:focus, .c2tr1 form select:focus{
+    border: 0;
+}
+.prc, .chck{
+    border: 0 !important;
+    padding: 0 !important;
+}
+.prc div div{
+    border: 1px solid black;
+    padding: 7px;
+    border-radius: 5px;
+}
+.prc > div:first-child{
+    margin-right: 30px;
+}
+.prc input{
+    padding: 5px;
+}
+.chck{
+    display: block !important;
+}
+.chck input{
+    border: 1px solid black !important;
+    width: 4vh !important;
+    height: 4vh;
+    border-radius: 4px;
+}
+.chcklbl{
+    display: flex;
+    margin-bottom: 10px;
+}
+.chcklbl input{
+    margin-right: 8px;
+}
+.chcklbl label{
+    font-size: 18px;
+    margin-top: 3.5px;
+}
+.c2tr1 .btn{
+    border: 0;
+    padding: 0;
+}
+.c2tr1 .btn button{
+    padding: 17px;
+    width: 100%;
+    background-color: chocolate;
+    color: white;
+    border: chocolate;
+    border-radius: 5px;
+}
+.c2tr2{
+    margin-top: 40px;
+    background-color: rgb(240, 240, 240);
+    box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.3);
+}
+.c2tr2 .hdr{
+    border-left: 3px solid chocolate;
+    border-radius: 0;
+    padding: 5px 12px;
+}
+.c2tr2 > div:first-child{
+    margin-bottom: 18px;
+}
+.c2tr2 > div:last-child{
+    padding: 0 !important;
+}
+.c2tr2 > div:last-child div{
+    padding: 0 !important;
+    margin-bottom: 5px;
+    display: flex;
+}
+.c2tr2 .span{
+    font-size: 25px;
+    margin-left: -12px !important;
+}
+.c2tr2why{
+    margin-top: 3.2px;
+}
+.c2tr3{
+    margin-top: 40px;
+    background-image: url('https://html.geekcodelab.com/holiday-planners/assets/images/get-a-questions-back.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.c2tr3 .opac{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: chocolate;
+    opacity: .9;
+}
+.c2tr3cont{
+    position: relative;
+    color: white;
+}
+.c2tr3 .hdr{
+    border-left: 3px solid black;
+    border-radius: 0;
+    padding: 5px 12px;
+    margin-bottom: 20px;
+}
+.c2tr3cont .pr{
+    line-height: 23px;
+    margin-bottom: 20px;
+}
+.c2tr3 .eml, .c2tr3 .phn{
+    display: flex;
+    margin-bottom: 10px;
+}
+.c2tr3 .phn{
+    margin-bottom: -3px;
+}
+.c2tr3 .emlic, .c2tr3 .phnic{
+    color: black;
+    font-size: 23px;
+    margin-right: 10px;
+}
+.c2tr3 .emladdr a, .c2tr3 .phnnbr a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 600px) {
+    .cont1t {
+        padding: 120px 5px; /* Reduced padding */
+        padding-top: 280px;
+        height: 90vh; /* Adjust height */
+        text-align: center;
+    }
+    .cont1t .opac{
+        height: 90vh;
+    }
+
+    .cont1t .h1 {
+        font-size: 40px; /* Smaller font size */
+        margin-top: 80px; /* Adjust margin */
+    }
+    .cont2t{
+        height: 764.7vh;
+    }
+    .contentto {
+        display: block; /* Stack vertically */
+        left: 10px; /* Adjust positioning */
+        right: 10px; /* Adjust positioning */
+        height: 100vh;
+    }
+    .contentto > div:first-child{
+        height: auto;
+        margin-bottom: 123.5px;
+    }
+    .contentto > div:last-child {
+        width: 100%; 
+    }
+    .c2tl1 form, .c2tl2, .c2tl3, .c2tl4{
+        flex-direction: column;
+    }
+    .c2tl1 form{
+        border: 0;
+        gap: 10px;
+        border-radius: 5px;
+        display: flex;
+        label{
+        text-align: left;
+        border: 1px solid black;
+        };
+        select{
+            border: 0;
+            border: 1px solid black;
+        };
+    }
+    .c2tl2 > div, .c2tl3 > div, .c2tl4 > div {
+        width: 100%; /* Full width for smaller screens */
+        margin-bottom: 30px; /* Margin for separation */
+    }
+    .c2tl > div{
+        margin-bottom: 0px;
+    }
+    .button button {
+        width: 100%; /* Full width buttons */
+        padding: 10px; /* Adjust padding */
+    }
+}

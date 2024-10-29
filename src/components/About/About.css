@@ -1,0 +1,315 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.cont1a{
+    background-image: url('https://html.geekcodelab.com/holiday-planners/assets/images/about-banner.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 120vh;
+    text-align: center;width: 100%;
+    background-position: center;
+    color: white;
+    padding: 250px ;
+    text-align: center;
+}
+.cont1a .opac{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 120vh;
+    opacity: .4;
+    background-color: black;
+}
+.cont1a .h1{
+    font-size: 80px;
+    margin-top: 160px;
+    text-align: center;
+    position: relative;
+}
+.contenta{
+    position: absolute;
+    left: 120px;
+    right: 120px;
+}
+.cont1a .contenta{
+    border: 0;
+    bottom: -250px;
+    display: flex;
+    justify-content: space-between;
+}
+.cont1a .contenta .specials{
+    background-color: white;
+    padding: 20px 0;
+    border: 0;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+.cont1a .contenta div {
+    margin: 0 10px; 
+}
+.cont1a .contenta > div:first-child {
+    margin: 0;
+    margin-right: 10px; 
+}
+.cont1a .contenta > div:last-child {
+    margin: 0;
+    margin-left: 10px; 
+}
+.cont1a .contenta .specials:hover{
+    box-shadow: 0 0 0 2px chocolate;
+}
+.cont1a .contenta .specials .icon{
+    color: chocolate;
+    border: 0;
+    font-size: 50px;
+}
+.cont1a .contenta .specials .cont{
+    border: 0;
+}
+.cont1a .contenta .specials .cont h4{
+    color: black;
+    font-size: 21px;
+}
+.cont1a .contenta .specials .cont p{
+    color: #909090;
+    font-size: 16px;
+}
+.cont2a{
+    height: 100vh;
+}
+.cont2a .contenta{
+    padding: 230px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.cont2a .contenta > div:first-child {
+    margin-right: 100px; 
+}
+.cont2a .cont2img2{
+    position: absolute;
+    height: 160px;
+    width: 220px;
+    bottom: -40px;
+    left: -70px;
+    border: 3px solid chocolate; 
+    padding: 3px;
+}
+.cont3a{
+    padding: 100px 0;
+    display: flex;
+}
+.imgcont3a .img{
+    background-image: url('https://html.geekcodelab.com/holiday-planners/assets/images/about-description-left-image.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 77vh;
+    width: 104.5vh;
+}
+.conttcont3a{
+    background-color: #e7e7e7;
+    padding: 60px 50px;
+}
+.conttcont3a div{
+    margin-top: 20px;
+    line-height: 23px;
+}
+.divh2 .h2{
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 50px;
+}
+.divh2 .h2 span{
+    font-weight: 700;
+}
+.divp2 .checki{
+    color: chocolate;
+    font-size: 28px;
+}
+.divp2 div{
+    display: flex;
+    margin: 0;
+}
+.divp2 .text{
+    padding: 0 5px;
+}
+.cont4a{
+    height: 47vh;
+    margin-top: -30px;
+}
+.cont4a .contenta{
+    display: flex;
+}
+.cont4a .contenta > div { 
+    width: 50%;
+}
+.divlefta div{
+    margin-bottom: 15px;
+    line-height: 23px;
+    padding-left: 30px;
+}
+.cont4a .divh2 .h2{
+    font-size: 37px;
+    font-weight: 300;
+    line-height: 50px;
+}
+.divrighta div{
+    padding: 0 5px;
+}
+.divpercnt{
+    margin-bottom: 20px;
+}
+.divpercnt div{
+    margin: 3px 0;
+}
+.divpercnt .field{
+    display: flex;
+    justify-content: space-between;
+}
+.divpercnt .bar1{
+    background-color: chocolate;
+    height: 10px;
+    margin: 0 10px;
+    width: 80%;
+}
+.divpercnt .bar2{
+    background-color: chocolate;
+    height: 10px;
+    margin: 0 10px;
+    width: 95%;
+}
+.divpercnt .bar3{
+    background-color: chocolate;
+    height: 10px;
+    margin: 0 10px;
+    width: 67%;
+}
+.divpercnt .bar4{
+    background-color: chocolate;
+    height: 10px;
+    margin: 0 10px;
+    width: 87%;
+}
+
+
+/* Media query for max-width: 600px */
+@media (max-width: 600px) {
+    *{
+        box-sizing: border-box;
+    }
+    .cont1a {
+        padding: 120px 5px; /* Reduced padding */
+        padding-top: 280px;
+        height: 90vh; /* Adjust height */
+        text-align: center;
+    }
+    .cont1a .opac{
+        height: 90vh;
+    }
+
+    .cont1a .h1 {
+        font-size: 40px; /* Reduced font size */
+        margin-top: 80px; /* Adjusted margin */
+    }
+    .contenta{
+        left: 0;
+        right: 0;
+    }
+
+    .cont1a .contenta {
+        position: relative;
+        display: block;
+        bottom: -200px; /* Reset bottom */
+        align-items: center;
+        width: 100%;
+        padding: 10px;
+    }
+    .cont1a .contenta > div {
+        margin: 0 !important;
+        margin-bottom: 10px !important;
+    }
+    .cont1a .contenta > div:first-child {
+        margin-right: 0 !important; 
+    }
+    .cont1a .contenta > div:last-child {
+        margin-left: 0 !important; 
+    }
+
+    .cont1a .contenta .specials {
+        padding: 30px 0;
+        width: 100%; /* Full width */
+    }
+
+    .cont1a .contenta .specials .icon {
+        font-size: 30px; /* Reduced font size */
+    }
+
+    .cont1a .contenta .specials .cont h4 {
+        font-size: 18px; /* Reduced font size */
+    }
+
+    .cont1a .contenta .specials .cont p {
+        font-size: 14px; /* Reduced font size */
+    }
+
+    .cont2a {
+        height: 97vh; /* Adjust height */
+        margin-top: 79vh; /* Added padding */
+    }
+
+    .cont2a .contenta {
+        width: 100%;
+        flex-direction: column; /* Stack content */
+        padding: 10px; /* Adjusted padding */
+    }
+
+    .cont2a .contenta > div:first-child {
+        margin-right: 0; /* Remove margin */
+    }
+    .cont2a .contenta > div:last-child{
+        margin-left: 70px;
+    }
+
+    .cont3a {
+        flex-direction: column; 
+    }
+
+    .imgcont3a .img {
+        width: 100%;
+    }
+    .conttcont3a{
+        padding: 10px;
+        padding-bottom: 20px;
+    }
+    .divh2 .h2 {
+        font-size: 28px; /* Reduced font size */
+    }
+
+    .divp2 .checki {
+        font-size: 24px; /* Reduced font size */
+    }
+
+    .cont4a {
+        height: 75vh; /* Adjust height */
+        margin-top: -85px;
+    }
+
+    .cont4a .contenta {
+        flex-direction: column; /* Stack content */
+        padding: 10px;
+    }
+
+    .cont4a .contenta > div {
+        width: 100%; /* Full width */
+    }
+
+    .divlefta div, .divrighta div {
+        padding-left: 0; /* Reset padding */
+    }
+
+    .divpercnt {
+        margin-bottom: 10px; /* Adjust spacing */
+    }
+}

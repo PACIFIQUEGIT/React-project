@@ -1,0 +1,210 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    background-color: black;
+    height: 100px;
+    left: 0;
+    right: 0;
+    position: fixed;
+    z-index: 100;
+}
+.content{
+    position: absolute;
+    left: 120px;
+    right: 120px;
+    padding-bottom: 20px;
+}
+.navbar .content .icons{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+.navbar .content .icons a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+}
+.navbar .content .icons a:hover{
+    background-color: white;
+    color: black;
+}
+.navbar .content .icons .b{
+    border-left: 1px solid white;
+}
+.navbar .content .icons .div1, .div2{
+    padding: 14px 0;
+}
+.navbar .content .logo{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.navbar .content .logo div a{
+    margin: 0 10px;
+}
+.navbar .content .logo div{
+    padding: 15px 20px;
+}
+.logo .button{
+    padding: 12px 55px;
+    background-color: chocolate;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 20px;
+}
+.logo .round{
+    padding: 15px;
+    border-radius: 100%;
+    margin-left: 12px;
+    border: 2px solid black;
+    font-size: 20px;
+}
+.round.icon{
+    padding: 15px;
+    border-radius: 100%;
+    margin-left: 12px;
+    background-color: chocolate;
+    border: 2px solid chocolate;
+    color: white;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .98); /* Semi-transparent black */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it appears above other content */
+  }
+.overlay-content{
+    position: absolute;
+    left: 0;
+    top: 50px;
+}
+  
+  .overlay-content a{
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+  }
+  .overlay-content a:hover{
+    color: chocolate;
+    text-decoration: line-through;
+  }
+  .overlay .img{
+    position: absolute;
+    z-index: -50;
+    opacity: .2;
+    right: 0;
+    bottom: 50px;
+    height: 200px;
+    width: 200px;
+  }
+  .overlay .divicon{
+    position: absolute;
+    right: 20px;
+    bottom: 50px;
+    height: 200px;
+    width: 200px;
+    color: chocolate;
+    display: flex;
+    flex-direction: column;
+    font-size: 33px;
+  }
+  .mrgnbt{
+    margin-bottom: 15px;
+  }
+  .overlay .round.icon{
+    padding: 17px;
+    border-radius: 100%;
+    margin-left: 12px;
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+    position: absolute;
+    top: 70px;
+    right: 172px;
+}
+.pagesas{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+.pagesas div{
+    padding: 12px 0 !important;
+}
+.overlay-content div{
+    padding: 50px 120px;
+}
+input:focus, textarea:focus, select:focus{
+    border: none;
+    outline: none;
+}
+
+  
+
+/* Media query for max-width: 600px */
+@media (max-width: 600px) {
+    .navbar {
+        height: 80px; /* Adjust height */
+    }
+    
+    .content {
+        left: 10px; /* Adjusted for smaller screens */
+        right: 10px; /* Adjusted for smaller screens */
+        padding-bottom: 10px; /* Reduced padding */
+    }
+
+    .navbar .content .icons {
+        flex-direction: column; /* Stack items */
+        align-items: center; /* Center items */
+    }
+
+    .navbar .content .icons a {
+        padding: 10px; /* Reduced padding */
+        font-size: 14px; /* Adjusted font size */
+    }
+
+    .navbar .content .logo {
+        flex-direction: column; /* Stack logo items */
+        padding: 10px; /* Reduced padding */
+    }
+
+    .logo .button {
+        padding: 10px 20px; /* Reduced padding */
+        font-size: 16px; /* Adjusted font size */
+    }
+
+    .overlay .img {
+        height: 150px; /* Reduced size */
+        width: 150px; /* Reduced size */
+    }
+
+    .overlay .divicon {
+        height: 150px; /* Reduced size */
+        width: 150px; /* Reduced size */
+        font-size: 25px; /* Adjusted font size */
+    }
+
+    .overlay-content div {
+        padding: 30px 10px; /* Reduced padding */
+    }
+
+    .overlay .round.icon{
+        right: 98px;
+        top: 177px;
+    }
+}
