@@ -1,5 +1,6 @@
 import React from 'react'
 import './Login.css'
+import { Footer } from '../Footer/Footer';
 
 export const Login = () => {
   return (
@@ -9,7 +10,7 @@ export const Login = () => {
 </div>
 <div class="container">
     <form id="form" action="/">
-        <h2>Sign in</h2>
+        <h2>Login in</h2>
     <div class="form-group">
         <label for="email">Email or Phone</label>
         <input type="text" id="email"/>
@@ -27,25 +28,11 @@ export const Login = () => {
     <button type="submit">Sign in</button>
     
     <div class="footer">
-        <p>New to LinkedIn? <a href="signup.html">Sign Up</a></p>
+        <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
     </div>
     </form>
 </div>
-<div class="">
-    <div class="sidebar-useful-links">
-        <a href="">About</a>
-        <a href="">Accessibility</a>
-        <a href="">Help Center</a>
-        <a href="">Privacy Policy</a>
-        <a href="">Advertising</a>
-        <a href="">Get the App</a>
-        <a href="">More</a>
-        <div class="copyright-msg">
-            <img src="images/linkedin.png" alt=""/>
-            <p>Linkedup &#169; 2022. All right reserved</p>
-        </div>
-    </div>
-</div>
+<Footer/>
     
     </>
   )
