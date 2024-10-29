@@ -16,32 +16,32 @@
     margin-bottom: 20px ;
     font-size: 12px;
 }
-h2 {
+.containerl h2 {
     margin: 0 0 20px 0;
 }
-.form-group {
+.containerl .form-group {
     margin-bottom: 15px;
 }
-label {
+.containerl label {
     display: block;
     margin-bottom: 5px;
 }
-input[type="text"],
-input[type="password"] {
+.containerl input[type="text"],
+.containerl input[type="password"] {
     width: 239px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
-.show-password {
+.containerl .show-password {
     display: flex;
     align-items: center;
     margin-top: 3px;
 }
-.show-password input {
+.containerl .show-password input {
     margin-right: 5px;
 }
-button {
+.containerl button {
     width: 100%;
     padding: 10px;
     background-color: #0073b1; /* LinkedIn blue */
@@ -51,24 +51,24 @@ button {
     cursor: pointer;
     margin-top: 5px;
 }
-button:hover {
+.containerl button:hover {
     background-color: #005582; /* Darker blue on hover */
 } 
-button a{
+.containerl button a{
     color: white;
 }
-.footer {
+.containerl .footer {
     margin-top: 20px;
     font-size: 12px;
     color: #555;
 }
-.footer a {
+.containerl .footer a {
     color: #0073b1;
     text-decoration: none;
 }
-.signheader{
+.containerl .signheader{
     padding: 10px 120px;
 }
-.signheader img{
+.containerl .signheader img{
     width: 100px;
 }
