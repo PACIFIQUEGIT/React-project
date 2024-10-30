@@ -27,7 +27,7 @@ export default function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/dashboard" element={<Dashboard />}>
-          <Route index element={<Divdash />} />
+          <Route path='' element={<Divdash />} />
           <Route path="users" element={<Users />} />
           <Route path="tourds" element={<Tourds />} />
           <Route path="bookingds" element={<Bookingds />} />
