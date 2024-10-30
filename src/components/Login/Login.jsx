@@ -1,15 +1,16 @@
 import React from 'react'
 import './Login.css'
 import { Footer } from '../Footer/Footer';
+import { Navbar } from '../Navbar/Navbar';
+import { Link } from "react-router-dom";
 
 export const Login = () => {
   return (
     <>
-<div class="signheader">
-    <a href="#"><img src="images/linkedinlogo.webp" alt=""/></a>
-</div>
+
+<Navbar/>
 <div class="containerl">
-    <form id="form" action="/">
+    <form id="form" action="/dashboard">
         <h2>Login in</h2>
     <div class="form-group">
         <label for="email">Email or Phone</label>
@@ -28,7 +29,7 @@ export const Login = () => {
     <button type="submit">Login in</button>
     
     <div class="footer">
-        <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+        <p>Don't have an account? <Link to="/signup">Sign Up</Link></p>
     </div>
     </form>
 </div>

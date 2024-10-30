@@ -1,0 +1,13 @@
+.table {
+    display: flex; 
+    margin: 20px 0; 
+}
+
+.table table {
+    width: 80%; 
+}
+
+.table th, .table td {
+    padding: 10px; 
+    text-align: left; 
+}

@@ -1,0 +1,39 @@
+.dashboard{
+    display: flex;
+    padding: 160px 20px;
+    padding-bottom: 20px;
+    color: white;
+    text-decoration: underline;
+}
+h1 span{
+    color: black;
+    text-decoration: underline;
+}
+.dashboard > div:first-child{
+    width: 20%;
+    border: 1px solid blue;
+    background-color: blue;
+    padding: 5px;
+}
+.sbbd{
+    border: 1px solid white;
+    padding: 5px;
+}
+h3 span{
+    color: white;
+}
+.sbbd div{
+    margin: 20px auto;
+}
+.sbbd > div:first-child{
+    margin-top: 8px;
+    margin-bottom: 35px;
+}
+.sbbd > div:last-child{
+    margin-top: 220px;
+}
+.dashboard .contents{
+    border: 1px solid blue;
+    width: 80%;
+    color: black;
+}

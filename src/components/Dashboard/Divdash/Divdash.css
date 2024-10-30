@@ -1,0 +1,11 @@
+.divdash{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    padding: 10px ;
+}
+.divdash div{
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    padding: 20px 50px;
+}
+
