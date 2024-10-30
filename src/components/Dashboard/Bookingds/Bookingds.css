@@ -1,16 +1,16 @@
-.tourform{
+.bookform{
     padding: 5px;
 }
-.tourform form{
+.bookform form{
     border: 1px solid black;
     padding: 20px 5px;
 }
-.trfic, .treic, .trnic {
+.bkfic, .bkeic, .bknic {
     color: chocolate;
     font-size: 23px;
     margin-right: 15px;
 }
-.tourform form button{
+.bookform form button{
     background-color: chocolate;
     color: white;
     border: chocolate;
@@ -19,10 +19,10 @@
     margin-top: 25px;
     margin-bottom: 52px;
 }
-.tfhdr{
+.bkhdr{
     margin-bottom: 35px;
 }
-.trfullname, .tremail, .trnumbertickets{
+.bkfullname, .bkemail, .bknumbertickets{
     display: flex;
     border: 1px solid black;
     padding: 10px 15px !important;
@@ -30,7 +30,7 @@
     margin-bottom: 25px;
     width: 35%;
 }
-.trfin input, .trein input, .trnin input{
+.bkfin input, .bkein input, .bknin input{
     border: 0;
     font-size: 15.46px;
 }
