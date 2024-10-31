@@ -12,20 +12,20 @@ export const Dashboard = () => {
         <div className='sidebar'>
           <div className='sbbd'>
             <div className="titleds">
-              <h1><Link to=""><span>Dashboard</span></Link></h1>
+              <h1><Link to=""><span>Dashboard</span></Link><Outlet /></h1>
             </div>
             <div className='resp'>
             <div className="usersds">
-              <h3><Link to="users"><span>Users</span></Link></h3>
+              <h3><Link to="users"><span>Users</span></Link><Outlet /></h3>
             </div>
             <div className="tourds">
-              <h3><Link to="tourds"><span>Tour</span></Link></h3>
+              <h3><Link to="tourds"><span>Tour</span></Link><Outlet /></h3>
             </div>
             <div className="bookingds">
-              <h3><Link to="bookingds"><span>Booking</span></Link></h3>
+              <h3><Link to="bookingds"><span>Booking</span></Link><Outlet /></h3>
             </div>
             <div className="logoutds">
-              <h3><Link to="/login"><span>Logout</span></Link></h3>
+              <h3><Link to="/login"><span>Logout</span></Link><Outlet /></h3>
             </div>
             </div>
           </div>
