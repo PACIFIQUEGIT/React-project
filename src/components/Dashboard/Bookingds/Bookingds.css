@@ -34,3 +34,30 @@
     border: 0;
     font-size: 15.46px;
 }
+
+
+@media (max-width: 600px) {
+    .bookform {
+        padding: 5px; /* Adjust padding for smaller screens */
+    }
+
+    .bookform form {
+        padding: 10px; /* Reduce padding for form */
+    }
+
+    .bkfullname, .bkemail, .bknumbertickets {
+        width: 100%; /* Full width for input fields */
+        margin-bottom: 15px; /* Reduce margin between fields */
+    }
+
+    .bookform form button {
+        padding: 12px 30px; /* Adjust button padding */
+        margin-top: 15px; /* Reduce top margin */
+        margin-bottom: 30px; /* Reduce bottom margin */
+    }
+
+    .bkfic, .bkeic, .bknic {
+        font-size: 20px; /* Adjust font size for smaller screens */
+        margin-right: 10px; /* Reduce margin */
+    }
+}

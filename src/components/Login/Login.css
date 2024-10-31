@@ -72,3 +72,9 @@
 .containerl .signheader img{
     width: 100px;
 }
+
+@media screen and (max-width:600px) {
+    .containerl{
+        margin-top: 250px;
+    }
+}

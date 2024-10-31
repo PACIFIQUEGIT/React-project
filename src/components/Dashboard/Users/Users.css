@@ -11,3 +11,21 @@
     padding: 10px; 
     text-align: left; 
 }
+
+
+@media (max-width: 600px) {
+    .table {
+        flex-direction: column; /* Stack table vertically */
+        margin: 10px 0; /* Adjust margin for smaller screens */
+    }
+
+    .table table {
+        width: 100%; /* Full width for the table */
+        border-collapse: collapse; /* Optional: to remove gaps */
+    }
+
+    .table th, .table td {
+        padding: 8px; /* Reduce padding for smaller screens */
+        text-align: left; /* Keep text alignment */
+    }
+}

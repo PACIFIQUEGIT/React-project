@@ -22,34 +22,34 @@ export const Navbar = () => {
       <div className="content">
         <div className="icons">
           <div className="div1">
-            <a href=""><MdMailOutline /> holidayplanners@gmail.com</a>
-            <a className='b' href=""><FaPhoneAlt /> +1234567890</a>
+            <a href="mailto:holidayplanners@gmail.com"><MdMailOutline /> holidayplanners@gmail.com</a>
+            <a className='b' href="tel:+1234567890"><FaPhoneAlt /> +1234567890</a>
           </div>
           <div className="div2">
-            <a href=""><FaFacebookF /></a>
-            <a className='b' href=""><FaInstagram /></a>
-            <a className='b' href=""><FaTwitter /></a>
+            <a href="#"><FaFacebookF /></a>
+            <a className='b' href="#"><FaInstagram /></a>
+            <a className='b' href="#"><FaTwitter /></a>
           </div>
         </div>
         <div className="logo">
-          <img src="https://html.geekcodelab.com/holiday-planners/assets/images/logo.png" alt="" />
+          <img src="https://html.geekcodelab.com/holiday-planners/assets/images/logo.png" alt="Holiday Planners Logo" />
           <div>
-            <a className='button' href="">Reserve</a>
-            <a className='round' ><IoSearch /></a>
-            <a className='round icon' onClick={toggleDiv}><FaBars /></a>
+            <a className='button' href="#">Reserve</a>
+            <a className='round' href="#"><IoSearch /></a>
+            <a className='round icon' onClick={toggleDiv} role="button" aria-label="Toggle menu"><FaBars /></a>
           </div>
         </div>
       </div>
       {isVisible && (
         <div className="overlay">
-            <img className='img' src="https://html.geekcodelab.com/holiday-planners/assets/images/logo-icon-white.svg" alt="" />
-            <div className="divicon">
+          <img className='img' src="https://html.geekcodelab.com/holiday-planners/assets/images/logo-icon-white.svg" alt="Holiday Planners Icon" />
+          <div className="divicon">
             <IoLogoFacebook className='mrgnbt' />
             <FaInstagramSquare className='mrgnbt' />
             <AiFillTwitterCircle className='mrgnbt' />
-            </div>
+          </div>
           <div className="overlay-content">
-            <div><img src="https://html.geekcodelab.com/holiday-planners/assets/images/white-logo.png" alt="" /></div>
+            <div><img src="https://html.geekcodelab.com/holiday-planners/assets/images/white-logo.png" alt="White Holiday Planners Logo" /></div>
             <div className="pagesas">
               <Link to="/">Home</Link>
               <Link to="/about">About</Link>
@@ -57,13 +57,13 @@ export const Navbar = () => {
               <Link to="/tour">Tour</Link>
               <Link to="/contactus">Contact Us</Link>
               <div>
-                 <Link to="/login">Login</Link>
-                 <Link to="/signup">Sign Up</Link>
+                <Link to="/login">Login</Link>
+                <Link to="/signup">Sign Up</Link>
               </div>
               <Outlet />
             </div>
           </div>
-            <a className='round icon' onClick={toggleDiv}><IoMdClose /></a>
+          <a className='round icon' onClick={toggleDiv} role="button" aria-label="Close menu"><IoMdClose /></a>
         </div>
       )}
     </div>

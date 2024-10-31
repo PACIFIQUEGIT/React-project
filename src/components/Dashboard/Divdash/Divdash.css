@@ -9,3 +9,16 @@
     padding: 20px 50px;
 }
 
+
+@media (max-width: 600px) {
+    .divdash {
+        flex-direction: column; /* Stack items vertically */
+        padding: 5px; /* Adjust padding for smaller screens */
+    }
+
+    .divdash div {
+        padding: 10px; /* Reduce padding for smaller screens */
+        width: auto; /* Make each div full width */
+        margin-bottom: 10px; /* Add some space between divs */
+    }
+}

@@ -14,6 +14,7 @@ export const Dashboard = () => {
             <div className="titleds">
               <h1><Link to=""><span>Dashboard</span></Link></h1>
             </div>
+            <div className='resp'>
             <div className="usersds">
               <h3><Link to="users"><span>Users</span></Link></h3>
             </div>
@@ -25,6 +26,7 @@ export const Dashboard = () => {
             </div>
             <div className="logoutds">
               <h3><Link to="/login"><span>Logout</span></Link></h3>
+            </div>
             </div>
           </div>
         </div>

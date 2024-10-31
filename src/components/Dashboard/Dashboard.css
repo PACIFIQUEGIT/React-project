@@ -22,18 +22,50 @@
 h3 span{
     color: white;
 }
-.sbbd div{
+.sbbd .titleds, .sbbd .userds, .sbbd .tourds, .sbbd .bookingds{
     margin: 20px auto;
 }
 .sbbd > div:first-child{
     margin-top: 8px;
     margin-bottom: 35px;
 }
-.sbbd > div:last-child{
+.sbbd .resp > div:last-child{
     margin-top: 220px;
 }
 .dashboard .contents{
     border: 1px solid blue;
     width: 80%;
     color: black;
+}
+
+
+@media (max-width: 600px) {
+    .dashboard {
+        padding: 5px; /* Adjust padding for smaller screens */
+        padding-top: 250px;
+        flex-direction: column;
+    }
+
+    .dashboard > div:first-child {
+        width: auto; /* Full width on small screens */
+        flex-direction: column;
+    }
+
+    .dashboard .contents {
+        width: auto; /* Full width for contents */
+    }
+
+    .sbbd .resp > div:last-child {
+        margin-top: 0px; 
+    }
+    .resp{
+        display: flex;
+    }
+    .sbbd > div:first-child{
+        margin-top: 8px;
+        margin-bottom: 5px;
+    }
+    .sbbd .userds, .sbbd .tourds, .sbbd .bookingds{
+        margin: auto;
+    }
 }
