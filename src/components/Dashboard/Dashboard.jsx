@@ -1,8 +1,9 @@
+// Dashboard.js
 import React from 'react';
 import { Navbar } from '../Navbar/Navbar';
 import { Footer } from '../Footer/Footer';
-import './Dashboard.css';
 import { Link, Outlet } from "react-router-dom";
+import './Dashboard.css';
 
 export const Dashboard = () => {
   return (
@@ -10,28 +11,14 @@ export const Dashboard = () => {
       <Navbar />
       <div className='dashboard'>
         <div className='sidebar'>
-          <div className='sbbd'>
-            <div className="titleds">
-              <h1><Link to=""><span>Dashboard</span></Link></h1>
-            </div>
-            <div className='resp'>
-            <div className="usersds">
-              <h3><Link to="users"><span>Users</span></Link></h3>
-            </div>
-            <div className="tourds">
-              <h3><Link to="tourds"><span>Tour</span></Link></h3>
-            </div>
-            <div className="bookingds">
-              <h3><Link to="bookingds"><span>Booking</span></Link></h3>
-            </div>
-            <div className="logoutds">
-              <h3><Link to="/login"><span>Logout</span></Link></h3>
-            </div>
-            </div>
-          </div>
+          <h1><Link to="/">Dashboard</Link></h1>
+          <Link to="users">Users</Link>
+          <Link to="tourds">Tour</Link>
+          <Link to="bookingds">Booking</Link>
+          <Link to="/login">Logout</Link>
         </div>
         <div className="contents">
-            <Outlet/>
+          <Outlet />
         </div>
       </div>
       <Footer />
