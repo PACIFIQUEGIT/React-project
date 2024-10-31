@@ -59,6 +59,7 @@ export const Navbar = () => {
               <div>
                 <Link to="/login">Login</Link>
                 <Link to="/signup">Sign Up</Link>
+                <Outlet />
               </div>
               <Outlet />
             </div>
