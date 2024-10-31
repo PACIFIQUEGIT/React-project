@@ -26,7 +26,7 @@ export default function App() {
         <Route path="/contactus" element={<Contactus />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
-        <Route path="/dashboard" element={<Dashboard />}>
+        <Route path="dashboard" element={<Dashboard />}>
           <Route path='' element={<Divdash />} />
           <Route path="users" element={<Users />} />
           <Route path="tourds" element={<Tourds />} />
