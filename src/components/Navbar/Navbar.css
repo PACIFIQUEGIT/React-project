@@ -82,19 +82,19 @@
     right: 0;
     bottom: 0;
     height: 100vh;
-    background-color: rgba(0, 0, 0, .98); /* Semi-transparent black */
+    background-color: rgba(0, 0, 0, .98); 
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    z-index: 1000; /* Ensure it appears above other content */
+    z-index: 1000; 
   }
 .overlay-content{
     position: absolute;
     left: 0;
     top: 50px;
-    z-index: 100;
+    z-index: 10000;
 }
   
   .overlay-content a{
@@ -172,17 +172,21 @@ input:focus, textarea:focus, select:focus{
 
     .navbar .content .icons {
         flex-direction: column; /* Stack items */
-        align-items: center; /* Center items */
+        align-items: center; 
     }
 
     .navbar .content .icons a {
-        padding: 10px; /* Reduced padding */
-        font-size: 14px; /* Adjusted font size */
+        padding: 10px; 
+        font-size: 14px; 
     }
 
     .navbar .content .logo {
-        flex-direction: column; /* Stack logo items */
-        padding: 10px; /* Reduced padding */
+        flex-direction: column; 
+        padding: 10px; 
+    }
+
+    .navbar .content .logo div{
+        text-align: center;
     }
 
     .logo .button {
@@ -191,6 +195,7 @@ input:focus, textarea:focus, select:focus{
     }
 
     .overlay .img {
+        top: 300px;
         height: 150px; /* Reduced size */
         width: 150px; /* Reduced size */
     }
@@ -198,7 +203,8 @@ input:focus, textarea:focus, select:focus{
     .overlay .divicon {
         height: 150px; /* Reduced size */
         width: 150px; /* Reduced size */
-        font-size: 25px; /* Adjusted font size */
+        font-size: 25px; 
+        top: 345px;
     }
 
     .overlay-content div {
@@ -206,7 +212,8 @@ input:focus, textarea:focus, select:focus{
     }
 
     .overlay .round.icon{
-        right: 98px;
-        top: 177px;
+        right: 74px;
+        top: 176px;
+        z-index: 10000;
     }
 }

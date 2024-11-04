@@ -1,31 +1,37 @@
 import React from 'react';
-import { Navbar } from '../Navbar/Navbar';
-import { Footer } from '../Footer/Footer';
+import { MdTour } from "react-icons/md";
+import { FaBookmark } from "react-icons/fa";
 import './Dashboard.css';
 import { Link, Outlet } from "react-router-dom";
+import { FaUser } from "react-icons/fa";
+import { IoLogOutSharp } from "react-icons/io5";
 
 export const Dashboard = () => {
   return (
     <>
-      <Navbar />
+      
       <div className='dashboard'>
         <div className='sidebar'>
           <div className='sbbd'>
             <div className="titleds">
-              <h1><Link to=""><span>Dashboard</span></Link></h1>
+              <h1><Link to="" style={{textDecoration: 'none'}}><span className='dash'>Dashboard</span></Link></h1>
             </div>
             <div className='resp'>
             <div className="usersds">
-              <h3><Link to="users"><span>Users</span></Link></h3>
+              <div className='trfic1'><FaUser /></div>
+              <h3><Link to="users" style={{textDecoration: 'none'}}><span>Users</span></Link></h3>
             </div>
             <div className="tourds">
-              <h3><Link to="tourds"><span>Tour</span></Link></h3>
+              <div className='trfic1'><MdTour /></div>
+              <h3><Link to="tourds" style={{textDecoration: 'none'}}><span>Tour</span></Link></h3>
             </div>
             <div className="bookingds">
-              <h3><Link to="bookingds"><span>Booking</span></Link></h3>
+              <div className='trfic1'><FaBookmark /></div>
+              <h3><Link to="bookingds" style={{textDecoration: 'none'}}><span>Booking</span></Link></h3>
             </div>
             <div className="logoutds">
-              <h3><Link to="/login"><span>Logout</span></Link></h3>
+              <div className='trfic1'><IoLogOutSharp /></div>
+              <h3><Link to="/login" style={{textDecoration: 'none'}}><span>Logout</span></Link></h3>
             </div>
             </div>
           </div>
@@ -34,7 +40,7 @@ export const Dashboard = () => {
             <Outlet/>
         </div>
       </div>
-      <Footer />
+      
     </>
   );
 };

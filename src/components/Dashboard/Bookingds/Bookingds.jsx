@@ -7,36 +7,44 @@ import './Bookingds.css'
 export const Bookingds = () => {
   return (
     <>
-          <div className="bookform">
-                    <form action="">
-                        <div className="bkhdr">
-                            <h2>Book Your Tour</h2>
-                        </div>
+          <div className='table'>
 
-                        <div className="bkfullname">
-                        <div className='bkfic'><FaUser /></div>
-                        <div className='bkfin'>
-                            <input type="text" placeholder='Full Name *' required />
-                        </div>
-                        </div>
-                        <div className="bkemail">
-                        <div className="bkeic"><MdEmail /></div>
-                        <div className="bkein">
-                            <input type="email" placeholder='Email *' required />
-                        </div>
-                        </div>
-                        <div className="bknumbertickets">
-                        <div className="bknic"><FaUserTag /></div>
-                        <div className="bknin">                                
-                            <input type="number" placeholder='1' />
-                        </div>
-                        </div>
-                        
-                        <div className="btn">
-                            <button><b>BOOK NOW</b></button>
-                        </div>
-                    </form>
-          </div>
+<table>
+   <thead>
+<tr>
+  <th>Full Name</th>
+  <th>Email</th>
+  <th>Adrress</th>
+  <th>Number of Tickets</th>
+  <th>Status</th>
+</tr>
+   </thead>
+   <tbody>
+<tr>
+  <td>Emma Emmanuel</td>
+  <td>Emma@gmail.com</td>
+  <td>Italy</td>
+  <td>5</td>
+  <td>Booked</td>
+</tr>
+<tr>
+  <td>Rene Pacifique</td>
+  <td>Rene@gmail.com</td>
+  <td>Greece</td>
+  <td>3</td>
+  <td>Pending</td>
+</tr>
+<tr>
+  <td>Holiday Planner</td>
+  <td>HolidayPlanner@gmail.com</td>
+  <td>Germany</td>
+  <td>4</td>
+  <td>Pending</td>
+</tr>
+   </tbody>
+</table>
+
+</div>
     </>
   )
 }

@@ -6,37 +6,41 @@ import { FaUserTag } from "react-icons/fa";
 
 export const Tourds = () => {
   return (
-    <>
-            <div className="tourform">
-                    <form action="">
-                        <div className="tfhdr">
-                            <h2>Find Your Tour</h2>
-                        </div>
-                        
-                        <div className="trfullname">
-                        <div className='trfic'><FaUser /></div>
-                        <div className='trfin'>
-                            <input type="text" placeholder='Full Name *' required />
-                        </div>
-                        </div>
-                        <div className="tremail">
-                        <div className="treic"><MdEmail /></div>
-                        <div className="trein">
-                            <input type="email" placeholder='Email *' required />
-                        </div>
-                        </div>
-                        <div className="trnumbertickets">
-                        <div className="trnic"><FaUserTag /></div>
-                        <div className="trnin">                                
-                            <input type="number" placeholder='1' />
-                        </div>
-                        </div>
+    <>   
+    <div className='table'>
 
-                        <div className="btn">
-                            <button><b>FIND NOW</b></button>
-                        </div>
-                    </form>
-            </div>
+    <table>
+       <thead>
+    <tr>
+      <th>Full Name</th>
+      <th>Email</th>
+      <th>Destinations</th>
+      <th>Number of Tickets</th>
+    </tr>
+       </thead>
+       <tbody>
+    <tr>
+      <td>Emma Emmanuel</td>
+      <td>Emma@gmail.com</td>
+      <td>Rome</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Rene Pacifique</td>
+      <td>Rene@gmail.com</td>
+      <td>Athens</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Holiday Planner</td>
+      <td>HolidayPlanner@gmail.com</td>
+      <td>Berlin</td>
+      <td>4</td>
+    </tr>
+       </tbody>
+    </table>
+
+    </div>
     </>
   )
 }
