@@ -8,25 +8,34 @@ export const Signup = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
-  const [error, setError] = useState('');
-  const navigate = useNavigate(); // Use useNavigate for redirection
+  const [error, setError] = useState({});
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setError(''); // Reset error message on submit
+    setError({}); // Reset error messages on submit
 
-    if (!email || !password) {
-      setError('Please fill in all fields');
+    let newErrors = {};
+    
+    // Email validation
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!email) {
+      newErrors.email = 'Email is required';
+    } else if (!emailPattern.test(email)) {
+      newErrors.email = 'Provide a valid email';
+    }
+    
+    // Password validation
+    if (!password) {
+      newErrors.password = 'Password is required';
+    } else if (password.length < 10) {
+      newErrors.password = 'Password must be at least 10 characters';
+    }
+
+    if (Object.keys(newErrors).length > 0) {
+      setError(newErrors);
       return;
     }
-    if (password.length < 10) {
-      setError('Password must be at least 10 characters');
-      return;
-    }
-
-    // Simulate a successful signup (replace with actual signup logic)
-    // If signup is successful, redirect to dashboard
-    // For example, you might want to call an API here
 
     navigate('/dashboard'); // Redirect to dashboard on success
   };
@@ -49,7 +58,7 @@ export const Signup = () => {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
-            <div className="error">{error}</div>
+            <div className="error">{error.email}</div>
           </div>
           <div className="form-group">
             <label htmlFor="password">Password (10+ characters)</label>
@@ -59,7 +68,7 @@ export const Signup = () => {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />
-            <div className="error">{error}</div>
+            <div className="error">{error.password}</div>
             <div className="show-password">
               <input
                 type="checkbox"

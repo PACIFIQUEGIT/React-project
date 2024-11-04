@@ -8,20 +8,37 @@ export const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
-  const [error, setError] = useState('');
+  const [error, setError] = useState({}); // Use an object to store error messages
   const navigate = useNavigate(); // Use useNavigate for redirection
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (!email || !password) {
-      setError('Please fill in all fields');
+    setError({}); // Reset the error messages on submit
+
+    let newErrors = {};
+    
+    // Email validation
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!email) {
+      newErrors.email = 'Email is required';
+    } else if (!emailPattern.test(email)) {
+      newErrors.email = 'Provide a valid email';
+    }
+    
+    // Password validation
+    if (!password) {
+      newErrors.password = 'Password is required';
+    } else if (password.length < 10) {
+      newErrors.password = 'Password must be at least 10 characters';
+    }
+
+    if (Object.keys(newErrors).length > 0) {
+      setError(newErrors);
       return;
     }
 
-    // Here you would typically handle the login logic, like an API call
-    // For now, let's simulate a successful login and redirect
-    // If login is successful:
-    navigate('/dashboard'); // Use navigate to redirect
+    // Simulate a successful login (replace with actual login logic)
+    navigate('/dashboard'); // Redirect to dashboard on success
   };
 
   const togglePassword = () => {
@@ -42,7 +59,7 @@ export const Login = () => {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
-            <div className="error">{error}</div>
+            {error.email && <div className="error">{error.email}</div>}
           </div>
           <div className="form-group">
             <label htmlFor="password">Password</label>
@@ -52,7 +69,7 @@ export const Login = () => {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />
-            <div className="error">{error}</div>
+            {error.password && <div className="error">{error.password}</div>}
             <div className="show-password">
               <input
                 type="checkbox"
