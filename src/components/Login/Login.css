@@ -22,6 +22,9 @@
 .containerl .form-group {
     margin-bottom: 15px;
 }
+.form-group .error{
+    color: red;
+}
 .containerl label {
     display: block;
     margin-bottom: 5px;
