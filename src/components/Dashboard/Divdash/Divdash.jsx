@@ -10,18 +10,15 @@ export const Divdash = () => {
     <>
             <div className="divdash">
                 <div className='divdash1'>
-                    <h4><FaUser /></h4>
-                    <h4>Users</h4>
+                    <h4><FaUser style={{marginRight:'7px', fontSize:'23px'}} />Users</h4>
                     <p>20</p>
                 </div>
-                <div className='divdash2'> 
-                    <h4><MdTour /></h4>
-                    <h4>Tour</h4>
+                <div className='divdash2'>
+                    <h4><MdTour style={{marginRight:'7px', fontSize:'23px'}} />Tour</h4>
                     <p>50</p>
                 </div>
                 <div className='divdash3'>
-                    <h4><FaBookmark /></h4>
-                    <h4>Booking</h4>
+                    <h4><FaBookmark style={{marginRight:'7px', fontSize:'23px'}} />Booking</h4>
                     <p>10</p>
                 </div>
             </div>

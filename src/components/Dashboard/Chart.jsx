@@ -80,7 +80,7 @@ const Chart = () => {
           </div>
         </div>
         <div className="bar">
-          <Bar style={{height: '100%'}} options={options} data={data} />
+          <Bar style={{height: '265px'}} options={options} data={data} />
         </div>
       
       </div>
