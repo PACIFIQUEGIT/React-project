@@ -54,12 +54,11 @@ export const Footer = () => {
             <h1>Navigation</h1>
             <hr />
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Destination</a></li>
-                <li><a href="">Tour</a></li>
-                <li><a href="">Blog</a></li>
-                <li><a href="">Contact Us</a></li>
+              <Link to="/">Home</Link>
+              <Link to="/about">About</Link>
+              <Link to="/destinations">Destination</Link>
+              <Link to="/tour">Tour</Link>
+              <Link to="/contactus">Contact Us</Link>
             </ul>
           </div>
           <div className="div1s">
